@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WaterFallSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +16,53 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9Tq-dd-rSL">
+                                <rect key="frame" x="0.0" y="-8" width="600" height="608"/>
+                                <collectionViewLayout key="collectionViewLayout" id="ddf-RF-Tyz" customClass="CHTCollectionViewWaterfallLayout" customModule="WaterFallSample" customModuleProvider="target"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainCollectionCell" id="NjA-bz-TK6" customClass="WaterFallCollectionViewCell" customModule="WaterFallSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="113" height="107"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lcC-On-Daa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="113" height="107"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="lcC-On-Daa" firstAttribute="top" secondItem="NjA-bz-TK6" secondAttribute="topMargin" constant="-8" id="C5A-h3-rJM"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="lcC-On-Daa" secondAttribute="trailing" constant="-8" id="G9z-z9-heO"/>
+                                            <constraint firstItem="lcC-On-Daa" firstAttribute="leading" secondItem="NjA-bz-TK6" secondAttribute="leadingMargin" constant="-8" id="Irv-oC-2ZO"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="lcC-On-Daa" secondAttribute="bottom" constant="-8" id="eEp-jg-rIb"/>
+                                        </constraints>
+                                        <size key="customSize" width="113" height="107"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="lcC-On-Daa" id="ScY-iZ-gRy"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="HGm-mK-7vZ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="bhs-0z-xTy"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9Tq-dd-rSL" secondAttribute="bottom" id="R70-r3-TKI"/>
+                            <constraint firstItem="9Tq-dd-rSL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-8" id="bqg-g6-Xee"/>
+                            <constraint firstItem="9Tq-dd-rSL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="ks9-Am-Mi6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Tq-dd-rSL" secondAttribute="trailing" constant="-16" id="lcg-Ty-h7i"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="9Tq-dd-rSL" id="Xek-lE-MmD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

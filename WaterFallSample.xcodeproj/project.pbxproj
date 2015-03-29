@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37ADC5CAAAD5E1CB78F63780 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57D1F742AFC868FF20677410 /* libPods.a */; };
 		F937B52F1AC7F5640001FB6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937B52E1AC7F5640001FB6F /* AppDelegate.swift */; };
 		F937B5321AC7F5640001FB6F /* WaterFallSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F937B5301AC7F5640001FB6F /* WaterFallSample.xcdatamodeld */; };
 		F937B5341AC7F5640001FB6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937B5331AC7F5640001FB6F /* ViewController.swift */; };
@@ -14,6 +15,10 @@
 		F937B5391AC7F5640001FB6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F937B5381AC7F5640001FB6F /* Images.xcassets */; };
 		F937B53C1AC7F5640001FB6F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F937B53A1AC7F5640001FB6F /* LaunchScreen.xib */; };
 		F937B5481AC7F5640001FB6F /* WaterFallSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937B5471AC7F5640001FB6F /* WaterFallSampleTests.swift */; };
+		F937B5521AC7F5840001FB6F /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = F937B5511AC7F5840001FB6F /* podfile */; };
+		F937B5551AC7F94C0001FB6F /* waterFall.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937B5541AC7F94C0001FB6F /* waterFall.swift */; };
+		F937B5571AC7FFA60001FB6F /* WaterFallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937B5561AC7FFA60001FB6F /* WaterFallCollectionViewCell.swift */; };
+		F937B5591AC803A00001FB6F /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937B5581AC803A00001FB6F /* ImageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57D1F742AFC868FF20677410 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6BD7BE9FD4E1155252FB1B6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B2328C81AC1903321B2CF086 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F937B5291AC7F5640001FB6F /* WaterFallSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterFallSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F937B52D1AC7F5640001FB6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F937B52E1AC7F5640001FB6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +46,11 @@
 		F937B5411AC7F5640001FB6F /* WaterFallSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterFallSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F937B5461AC7F5640001FB6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F937B5471AC7F5640001FB6F /* WaterFallSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallSampleTests.swift; sourceTree = "<group>"; };
+		F937B5511AC7F5840001FB6F /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
+		F937B5531AC7F62E0001FB6F /* WaterFallSampleHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterFallSampleHeader.h; sourceTree = "<group>"; };
+		F937B5541AC7F94C0001FB6F /* waterFall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = waterFall.swift; sourceTree = "<group>"; };
+		F937B5561AC7FFA60001FB6F /* WaterFallCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterFallCollectionViewCell.swift; sourceTree = "<group>"; };
+		F937B5581AC803A00001FB6F /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37ADC5CAAAD5E1CB78F63780 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +72,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12BBF5D19DB0BCA70D3BC4BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6BD7BE9FD4E1155252FB1B6 /* Pods.debug.xcconfig */,
+				B2328C81AC1903321B2CF086 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		92CC139391AE3FC3C0A1DD25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57D1F742AFC868FF20677410 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F937B5201AC7F5640001FB6F = {
 			isa = PBXGroup;
 			children = (
+				F937B5511AC7F5840001FB6F /* podfile */,
 				F937B52B1AC7F5640001FB6F /* WaterFallSample */,
 				F937B5441AC7F5640001FB6F /* WaterFallSampleTests */,
 				F937B52A1AC7F5640001FB6F /* Products */,
+				12BBF5D19DB0BCA70D3BC4BE /* Pods */,
+				92CC139391AE3FC3C0A1DD25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +113,17 @@
 		F937B52B1AC7F5640001FB6F /* WaterFallSample */ = {
 			isa = PBXGroup;
 			children = (
+				F937B5581AC803A00001FB6F /* ImageManager.swift */,
 				F937B52E1AC7F5640001FB6F /* AppDelegate.swift */,
 				F937B5331AC7F5640001FB6F /* ViewController.swift */,
+				F937B5561AC7FFA60001FB6F /* WaterFallCollectionViewCell.swift */,
 				F937B5351AC7F5640001FB6F /* Main.storyboard */,
 				F937B5381AC7F5640001FB6F /* Images.xcassets */,
 				F937B53A1AC7F5640001FB6F /* LaunchScreen.xib */,
 				F937B5301AC7F5640001FB6F /* WaterFallSample.xcdatamodeld */,
 				F937B52C1AC7F5640001FB6F /* Supporting Files */,
+				F937B5531AC7F62E0001FB6F /* WaterFallSampleHeader.h */,
+				F937B5541AC7F94C0001FB6F /* waterFall.swift */,
 			);
 			path = WaterFallSample;
 			sourceTree = "<group>";
@@ -122,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F937B54B1AC7F5640001FB6F /* Build configuration list for PBXNativeTarget "WaterFallSample" */;
 			buildPhases = (
+				717F5D41D4BBCF3BE8143089 /* Check Pods Manifest.lock */,
 				F937B5251AC7F5640001FB6F /* Sources */,
 				F937B5261AC7F5640001FB6F /* Frameworks */,
 				F937B5271AC7F5640001FB6F /* Resources */,
+				8331347B85BF81FA8996B64B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,7 +200,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0620;
-				ORGANIZATIONNAME = "相澤 隆志";
+				ORGANIZATIONNAME = "&#30456;&#28580; &#38534;&#24535;";
 				TargetAttributes = {
 					F937B5281AC7F5640001FB6F = {
 						CreatedOnToolsVersion = 6.2;
@@ -197,6 +237,7 @@
 			files = (
 				F937B5371AC7F5640001FB6F /* Main.storyboard in Resources */,
 				F937B53C1AC7F5640001FB6F /* LaunchScreen.xib in Resources */,
+				F937B5521AC7F5840001FB6F /* podfile in Resources */,
 				F937B5391AC7F5640001FB6F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,12 +251,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		717F5D41D4BBCF3BE8143089 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8331347B85BF81FA8996B64B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F937B5251AC7F5640001FB6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F937B5551AC7F94C0001FB6F /* waterFall.swift in Sources */,
+				F937B5571AC7FFA60001FB6F /* WaterFallCollectionViewCell.swift in Sources */,
 				F937B5341AC7F5640001FB6F /* ViewController.swift in Sources */,
+				F937B5591AC803A00001FB6F /* ImageManager.swift in Sources */,
 				F937B5321AC7F5640001FB6F /* WaterFallSample.xcdatamodeld in Sources */,
 				F937B52F1AC7F5640001FB6F /* AppDelegate.swift in Sources */,
 			);
@@ -340,21 +417,27 @@
 		};
 		F937B54C1AC7F5640001FB6F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6BD7BE9FD4E1155252FB1B6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WaterFallSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = WaterFallSample/WaterFallSampleHeader.h;
 			};
 			name = Debug;
 		};
 		F937B54D1AC7F5640001FB6F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2328C81AC1903321B2CF086 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WaterFallSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = WaterFallSample/WaterFallSampleHeader.h;
 			};
 			name = Release;
 		};
@@ -411,6 +494,7 @@
 				F937B54D1AC7F5640001FB6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F937B54E1AC7F5640001FB6F /* Build configuration list for PBXNativeTarget "WaterFallSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +503,7 @@
 				F937B5501AC7F5640001FB6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
